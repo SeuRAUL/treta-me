@@ -1,9 +1,9 @@
 <% provide(:title, "Home") %>
 
-<!-- Header -->
+  <!-- Header -->
     <section id="header">
       <header>
-        <h1>Treinee-Me</h1>
+        <h1>Trainee-Me</h1>
         <p>Se for capaz</p>
       </header>
       <footer>
@@ -13,10 +13,10 @@
 
 
 
-<!-- Banner -->
+  <!-- Banner -->
     <section id="banner">
-        <h2>29 de agosto</h2><br>
-      <p>Preparem-se para o maior evento de iniciação de suas carreiras!</p>
+      <h2>29 de agosto</h2><br>
+      <p>Preparem-se para iniciar seu caminho de sucesso!</p>
       <footer>
         <a href="#first" class="button style2 scrolly">Estou pronto!</a>
       </footer>
@@ -25,25 +25,17 @@
 
     <!-- Feature 1 -->
       <article id="first" class="container box style1 right">
-        <a href="#" class="image fit"> <%= image_tag("TSFC_logo.png", alt: "pic01") %> </a>
+        <%= image_tag("TSFC_logo.png", alt: "pic01", class: "image fit") %>
         <div class="inner">
-          <header>
-            <h2>Treinee-Me<br />
-            Se For Capaz</h2>
-          </header>
-          <p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
+          <p>O <strong>Trainee-me se for capaz</strong> é um evento organizado pela <strong>RN Júnior</strong> com o objetivo de promover a integração, o alinhamento e a disseminação de conhecimentos básicos dentro do Movimento Empresa Júnior, tendo como público principal os trainees ou recém-efetivados.</p>
         </div>
       </article>
 
-      <!-- Feature 2 -->
+    <!-- Feature 2 -->
       <article class="container box style1 left">
-        <a href="#" class="image fit"><%= image_tag("pic02.jpg", alt: "pic02") %></a>
+        <%= image_tag("pic02.jpg", alt: "pic02", class: "image fit") %>
         <div class="inner">
-          <header>
-            <h2>Mollis posuere<br />
-            lectus lacus</h2>
-          </header>
-          <p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
+          <p>Nosso evento ocorrerá no dia <strong>29 de agosto de 2015</strong> nos períodos manhã e tarde, contando com palestras, rodas de discussão, dinâmicas, coffee-break, entre outras atrações. <br />A meta de adesão do evento é de 100 pessoas e ele é aberto para membros e pós-juniores de empresas e iniciativas.</p>
         </div>
       </article>
 

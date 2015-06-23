@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TreineMe</title>
+  <title><%= yield(:title) %> | Treine-Me 2015 (PS RNJr)</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif]-->
 </head>
 <body>
+  <!-- Header -->
+    <section id="header">
+      <header>
+        <h1>Treine-Me</h1>
+        <p>Se for capaz</p>
+      </header>
+      <footer>
+        <a href="#banner" class="button style2 scrolly-middle">RNJr 2015</a>
+      </footer>
+    </section>
 
-<%= yield %>
+      <%= yield %>
 
+  <section id="footer">
+    <ul class="icons">
+      <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+      <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+      <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+      <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    </ul>
+    <div class="copyright">
+      <ul class="menu">
+        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
